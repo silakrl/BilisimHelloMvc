@@ -16,7 +16,7 @@ namespace Bilisim.EfApp
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Data Source=SIBEL\\SQLEXPRESS; Initial Catalog=OkulDb; Integrated Security=true; TrustServerCertificate=true");
+                options.UseSqlServer("Data Source=DESKTOP-HLFQRGU\\SQLEXPRESS; Initial Catalog=OkulDbBilisim; Integrated Security=true; TrustServerCertificate=true"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
