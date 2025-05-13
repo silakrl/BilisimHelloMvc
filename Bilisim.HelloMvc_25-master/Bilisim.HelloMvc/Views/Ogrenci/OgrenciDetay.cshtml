@@ -1,0 +1,35 @@
+﻿@model OgrenciDetayDTO
+
+<h3>ViewData örneği</h3>
+@if (ViewData["ogr"] != null)
+{
+    <p>
+        ViewData ile gelen öğrencinin bilgileri: @(((Ogrenci)ViewData["ogr"]!).Ad)
+    </p>
+}
+else
+{
+    <p>Öğrenci Bulunamadı!</p>
+}
+
+<h3>ViewBag Örneği</h3>
+@if (ViewBag.student != null)
+{
+    <p>ViewBag ile gelen öğrenci:@ViewBag.student.Ad</p>
+}
+else
+{
+    <p>Öğrenci Bulunamadı!</p>
+}
+
+<h3>Model örneği</h3>
+@if (Model != null)
+{
+    <p>Model ile gelen öğrenci:@Model.Ogrenci.Ad</p>
+    <p>Öğrencinin danışman bilgisi: @Model.Ogretmen.Ad</p>
+}
+else
+{
+    <p>Öğrenci Bulunamadı!</p>
+}
+
